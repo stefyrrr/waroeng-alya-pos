@@ -1,0 +1,138 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to bottom right, #f7f3fd, #f2ecfb);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+.login-box {
+  background: #fff;
+  padding: 30px;
+  border-radius: 5px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  width: 100%;
+  max-width: 360px;
+  height: 520px;
+  text-align: center;
+}
+.icon {
+  background: linear-gradient(to right, #a34be3, #8726dd);
+  color: white;
+  width: 80px;
+  height: 80px;
+  margin: 0 auto 20px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 36px;
+  box-shadow: 0 0 20px rgba(174, 106, 255, 0.7);
+}
+
+h2 {
+  font-size: 23px;
+  color: #a34be3;
+  font-weight: 700;
+      margin: 10px 0 5px;
+}
+p {
+  color: #898787;
+  margin-top: 10px;
+  font-size: 15px;
+}
+.form-group {
+  margin-top: 25px;
+  text-align: left;
+}
+.form-group label {
+  display: block;
+  font-size: 11px;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+  .icon-input {
+  display: flex;
+  align-items: center;
+  border: 1px solid #d7b8f1;
+  border-radius: 3px;
+  padding: 10px 14px;
+  background: #fff;
+  position: relative;
+}
+.icon-input i {
+  color: #a34be3;
+  margin-right: 10px;
+  font-size: 16px;
+}
+.icon-input input {
+  border: none;
+  outline: none;
+  font-size: 11px;
+  flex: 1;
+  color: #333;
+  background: transparent;
+}
+.icon-input .toggle-password {
+  position: absolute;
+  right: 12px;
+  cursor: pointer;
+  color: #a34be3;
+}
+.btn-login {
+  width: 100%;
+  margin-top: 30px;
+  background: linear-gradient(to right, #a34be3, #8726dd); /* GRADASI WARNA */
+  border: none;
+  color: white;
+  padding: 12px;
+  font-size: 11px;
+  border-radius: 3px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+.btn-login:hover {
+  background: linear-gradient(to right, #943bd2, #8726dd);
+}
+.error-message {
+  background: #ffe2e2;
+  color: #d60000;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 6px;
+  font-size: 12px;
+  animation: fadeOut 3s forwards;
+}
+@keyframes fadeOut {
+  0% { opacity: 1; }
+  80% { opacity: 1; }
+  100% { opacity: 0; display: none; }
+}
+
+@media (max-width: 600px) {
+.login-box {
+  padding: 30px;
+  max-width: 90%;
+}
+}
+
+@media (max-width: 480px) {
+.login-box {
+  padding: 20px;
+  border-radius: 15px;
+}
+h2 {
+  font-size: 22px;
+}
+.icon {
+  width: 60px;
+  height: 60px;
+  font-size: 28px;
+  }
+}

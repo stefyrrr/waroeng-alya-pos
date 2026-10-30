@@ -1,0 +1,215 @@
+h1 {
+  color: #6b21a8;
+  font-size: 30px;
+  padding: 20px;
+}
+p {
+  padding: 22px;
+  margin-top: -50px;
+}
+.user-container {
+  background: #fffeff;
+  padding: 20px;
+  max-width: 1230px;
+  margin: auto;
+  border-radius: 5px;
+  margin-top: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+.user-container h2 {
+  color: #7e22ce;
+  margin-bottom: 20px;
+}
+.user-grid {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.user-card {
+  background: white;
+  border-radius: 5px;
+  padding: 20px;
+  flex: 1 1 250px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+.user-icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  font-size: 24px;
+  color: white;
+}
+.user-icon.admin {
+  background: #a855f7;
+}
+.user-icon.kasir {
+  background: #3b82f6;
+}
+.user-info .user-name {
+  font-weight: bold;
+  color: #7e22ce;
+}
+.user-info .user-username {
+  font-size: 14px;
+  color: #555;
+}
+.role-badge {
+  display: inline-block;
+  margin-top: 8px;
+  padding: 4px 12px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 600;
+}
+.admin-role {
+  background: #a855f7;
+  color: white;
+}
+.kasir-role {
+  background: #f1f1f1;
+  color: #333;
+}
+.form-tambah-user {
+  background: #fffeff;
+  padding: 20px;
+  max-width: 1230px;
+  margin: auto;
+  border-radius: 5px;
+  margin-top: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.form-tambah-user h2 {
+  color: #7e22ce;
+  margin-bottom: 20px;
+}
+
+.form-tambah-user form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.form-tambah-user input,
+.form-tambah-user select,
+.form-tambah-user button {
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+.form-tambah-user button {
+  background-color: #a34be3;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.form-tambah-user button:hover {
+  background-color: #a44be395;
+}
+.hapus-btn {
+  margin-top: 10px;
+  display: inline-block;
+  padding: 6px 12px;
+  background-color: #e74c3c;
+  color: #fff;
+  font-size: 13px;
+  border-radius: 999px;
+  text-decoration: none;
+}
+
+.hapus-btn:hover {
+  background-color: #c0392b;
+}
+.user-info {
+  display: flex;
+  flex-direction: column;
+  gap: 6px; /* memberi jarak antar elemen vertikal */
+}
+
+.user-info .role-badge,
+.user-info .hapus-btn {
+  display: inline-block;
+  width: fit-content;
+}
+
+@media (max-width: 992px) {
+h1 {
+  font-size: 22px;
+  padding: 20px;
+  margin-top: -15px;
+
+}
+p {
+  font-size: 14px;
+  padding: 20px;
+  margin-top: -45px;
+  margin-bottom: 2px;
+}
+.user-container {
+  background: #fffeff;
+  padding: 20px;
+  border-radius: 5px;
+  margin: 0 16px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+.user-container h2 {
+  font-size: 18px;
+  margin-top: 2px;
+}
+.form-tambah-user {
+  background: #fffeff;
+  padding: 20px;
+  border-radius: 5px;
+  margin-top: 10px;
+  margin-left: 16px;
+  margin-right: 16px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+}
+
+@media (max-width: 600px) {
+h1 {
+  font-size: 18px;
+  padding: 20px;
+  margin-top: -26px;
+}
+p {
+  font-size: 12.5px;
+  padding: 20px;
+  margin-top: -45px;
+  margin-bottom: -5px;
+}
+.user-container {
+  background: #fffeff;
+  padding: 20px;
+  margin: auto;
+  border-radius: 5px;
+  margin: 0 16px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+.user-container h2 {
+  font-size: 16px;
+  margin-top: 2px;
+}
+.user-info .user-name {
+  font-size: 14px;
+}
+.user-info .user-username {
+  font-size: 12px;
+}
+.form-tambah-user {
+  background: #fffeff;
+  padding: 20px;
+  border-radius: 5px;
+  margin: 10px 16px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+}
